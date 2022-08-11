@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>czl的博客</title>
+		<style>
+		h1
+		{
+			color:black;
+			text-align:center;
+		}
+		p
+		{
+			color:black;
+			text-align:center;
+		}
+		button
+		{
+			color:black;
+			text-align:center;
+		}
+		body {
+		    background-image: url(th.jpg);
+		    background-size:100% 100%;
+			background-attachment:fixed;
+			image-rendering: -webkit-optimize-contrast;
+		
+		}
+		#en
+		{
+				position: absolute;
+			    Margin-left:300px;
+			    width: 1000px;
+			    height: 2000px;
+			    line-height: 50px;
+			    text-align: center;
+			    background:rgba(247, 247, 247, 0.8);
+		}
+		 
+		</style>
+	</head>
+	<body>
+		<div id = "en">
+			<h1>前端</h1>
+			<!--<input>//输入
+			<input />-->
+			<h1>我的 Web 页面</h1>
+			<p id="demo">一个段落</p>
+			<p><script>document.write(Date());</script></p>
+			<p><button type="button" onclick="myFunction2()">点击这里</button></p>
+			
+			
+			<h1>我的 Web 页面</h1>
+			<p id="myPar">我是一个段落。</p>
+			<p id="myDiv">我是一个div。</p>
+			
+			<p><button type="button" onclick="myFunction2()">点击这里</button></p>
+			
+			<p><button type="button" onclick="myFunction()">点击这里</button></p>
+			
+			<p><button onclick="myFunction3('Harry Potter','Wizard')">点击这里</button></p>
+			
+			<p><button onclick="myFunction4()">点击这里</button></p>
+			
+			
+			
+			<p>当您点击上面的按钮时，两个元素会改变。</p>
+			<p>如果时间早于 20:00，会获得问候 "Good day"。</p>
+			
+			<p id="demo2"></p>
+
+		</div>
+		
+		
+		
+		<script src="./js/test.js"></script>
+		
+		<script>
+		function myFunction4(){
+			var x="";
+			var time=new Date().getHours();
+			if (time<20){
+				x="Good day";
+		    }
+			document.getElementById("demo2").innerHTML=x;
+		}
+		</script>
+		<script>
+		function myFunction(){
+			document.getElementById("myPar").innerHTML="你好世界！";
+			document.getElementById("myDiv").innerHTML="你最近怎么样?";
+		}
+		</script>
+		<script>
+		function myFunction2()
+		{
+		    alert("Hello World!");
+		}
+		</script>
+		
+		<script>
+		function myFunction3(name,job){
+			alert("Welcome " + name + ", the " + job);
+		}
+		</script>
+		
+		<script>
+		function myFunction1(){
+			document.getElementById("demo").innerHTML="我的第一个 JavaScript 函数";
+		}
+		</script>
+		
+	</body>
+</html>
